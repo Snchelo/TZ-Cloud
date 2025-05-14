@@ -7,18 +7,14 @@ for num in numbers:
         print(num, end=' ')
 print()
 
-if numbers:
-    max_num = numbers[0]
-    min_num = numbers[0]
-    for num in numbers[1:]:
-        if num > max_num:
-            max_num = num
-        if num < min_num:
-            min_num = num
-    print(f"Максимальное число: {max_num}")
-    print(f"Минимальное число: {min_num}")
-else:
+if not numbers:
     print("Список пуст")
+else:
+    max_num = min_num = numbers[0]
+    for num in numbers[1:]:
+        if num > max_num: max_num = num
+        if num < min_num: min_num = num
+    print(f"Максимальное: {max_num}\nМинимальное: {min_num}")
 
 n = len(numbers)
 for i in range(n):
