@@ -23,13 +23,11 @@
 Запустить файл с кодом Python
 
 ```bash
-cd ./src/scripts    
 python tz_python.py 
 ```
 
 Запустить файл со скриптом Silenium
 
 ```bash
-cd ./src/scripts    
 python tz_selenium.py
 ```
